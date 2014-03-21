@@ -428,10 +428,10 @@
     <severity>8</severity>
   </rule>
   <rule ref="Generic.Functions.FunctionCallArgumentSpacing.NoSpaceAfterComma">
-    <severity>8</severity>
+    <severity>7</severity>
   </rule>
   <rule ref="Generic.Functions.FunctionCallArgumentSpacing.SpaceBeforeComma">
-    <severity>8</severity>
+    <severity>7</severity>
   </rule>
 </ruleset>
 
