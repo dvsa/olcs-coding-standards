@@ -262,32 +262,11 @@
   <rule ref="Squiz.ControlStructures.LowercaseDeclaration.FoundUppercase">
     <severity>8</severity>
   </rule>
-  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.NoSpaceBeforeArg">
+  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing">
     <severity>8</severity>
-  </rule>
-  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceBeforeComma">
-    <severity>8</severity>
-  </rule>
-  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterHint">
-    <severity>8</severity>
-  </rule>
-  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterOpen">
-    <severity>8</severity>
-  </rule>
-  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterOpenHint">
-    <severity>8</severity>
-  </rule>
-  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBeforeArg">
-    <severity>8</severity>
-  </rule>
-  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBeforeClose">
-    <severity>8</severity>
-  </rule>
-  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBeforeHint">
-    <severity>8</severity>
-  </rule>
-  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBetween">
-    <severity>8</severity>
+    <properties>
+        <property name="equalsSpacing" value="1"/>
+    </properties>
   </rule>
   <rule ref="Squiz.Functions.LowercaseFunctionKeywords.FoundUppercase">
     <severity>8</severity>
