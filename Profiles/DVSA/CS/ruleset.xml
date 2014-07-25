@@ -412,5 +412,8 @@
   <rule ref="Generic.Functions.FunctionCallArgumentSpacing.SpaceBeforeComma">
     <severity>7</severity>
   </rule>
+  <rule ref="Squiz.Classes.ClassFileName">
+      <severity>8</severity>
+  </rule>
 </ruleset>
 
