@@ -384,8 +384,8 @@
   <rule ref="Squiz.ControlStructures.ControlSignature">
     <severity>7</severity>
   </rule>
-  <!-- Note: The below exclusions are done as the ClassComment sniff runs all 
-       sub-sniffs even if only one or two are specified. As such, the extraneous 
+  <!-- Note: The below exclusions are done as the ClassComment sniff runs all
+       sub-sniffs even if only one or two are specified. As such, the extraneous
        sniffs must be excluded. These exclusions only need to be done on one of
        the ClassComment sniff references however. It does not need to be repeated.
   -->
@@ -420,12 +420,51 @@
     OLCS additions
   -->
   <rule ref="PEAR.Commenting.ClassComment">
-      <severity>4</severity>
       <exclude-pattern>test/*</exclude-pattern>
   </rule>
+  <rule ref="PEAR.Commenting.ClassComment.Missing">
+    <severity>2</severity>
+  </rule>
+  <rule ref="PEAR.Commenting.ClassComment.Empty">
+    <severity>2</severity>
+  </rule>
+  <rule ref="PEAR.Commenting.ClassComment.WrongStyle">
+    <severity>2</severity>
+  </rule>
+
   <rule ref="PEAR.Commenting.FunctionComment">
-      <severity>4</severity>
       <exclude-pattern>test/</exclude-pattern>
   </rule>
+  <rule ref="PEAR.Commenting.FunctionComment.Empty">
+      <severity>2</severity>
+  </rule>
+  <rule ref="PEAR.Commenting.FunctionComment.Missing">
+      <severity>2</severity>
+  </rule>
+  <rule ref="PEAR.Commenting.FunctionComment.MissingParamComment">
+      <severity>2</severity>
+  </rule>
+  <rule ref="PEAR.Commenting.FunctionComment.ParameterNamesNotAligned">
+      <severity>2</severity>
+  </rule>
+  <rule ref="PEAR.Commenting.FunctionComment.MissingReturn">
+      <severity>2</severity>
+  </rule>
+  <rule ref="PEAR.Commenting.FunctionComment.SpacingAfterParams">
+      <severity>2</severity>
+  </rule>
+  <rule ref="PEAR.Commenting.FunctionComment.WrongStyle">
+      <severity>2</severity>
+  </rule>
+  <rule ref="PEAR.Commenting.FunctionComment.SpacingBeforeTags">
+      <severity>2</severity>
+  </rule>
+  <rule ref="PEAR.Commenting.FunctionComment.MissingParamName">
+      <severity>2</severity>
+  </rule>
+  <rule ref="PEAR.Commenting.FunctionComment.ParamNameNoMatch">
+      <severity>2</severity>
+  </rule>
+
 </ruleset>
 
