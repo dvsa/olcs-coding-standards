@@ -415,5 +415,17 @@
   <rule ref="Squiz.Classes.ClassFileName">
       <severity>8</severity>
   </rule>
+
+  <!--
+    OLCS additions
+  -->
+  <rule ref="PEAR.Commenting.ClassComment">
+      <severity>4</severity>
+      <exclude-pattern>test/*</exclude-pattern>
+  </rule>
+  <rule ref="PEAR.Commenting.FunctionComment">
+      <severity>4</severity>
+      <exclude-pattern>test/</exclude-pattern>
+  </rule>
 </ruleset>
 
