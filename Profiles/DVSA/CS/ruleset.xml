@@ -493,5 +493,11 @@
       <severity>2</severity>
   </rule>
 
-</ruleset>
+  <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
+  <rule ref="Generic.Formatting.NoSpaceAfterCast"/>
 
+  <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops"/>
+  <rule ref="Squiz.PHP.DiscouragedFunctions"/>
+  <rule ref="Squiz.PHP.GlobalKeyword"/>
+
+</ruleset>
