@@ -1,0 +1,5 @@
+{
+    "name": "olcs/coding-standards",
+    "description": "OLCS CodeSniffer and MessDetector rule sets",
+    "require": {}
+}
