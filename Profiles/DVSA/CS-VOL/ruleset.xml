@@ -69,6 +69,17 @@
 
 
 
+    <!-- Make docblocks non-required, but must be valid docblock style if used -->
+    <!-- PEAR class comment - remove rules around required, but if used @params (@see etc) should be followed by content -->
+    <!-- no empty comments -->
+    <!-- remove @param comment -->
+    <!-- keep function comment wrongstyle -->
+    <!-- keep param name no match -->
+    <!-- missing param name keep, param name no match keep -->
+    <!-- review severity arguments on phpcs call -->
+    <!-- Parameter comments alignment remove -->
+    <!-- get rid of spacing stuff -->
+
 
 
 
@@ -97,14 +108,6 @@
         <exclude name="PEAR.Commenting.ClassComment.InvalidVersion"/>
 
         <exclude name="PEAR.Commenting.ClassComment.MissingTag"/>
-
-        <exclude name="PEAR.Commenting.ClassComment.SpacingAfterShort"/>
-
-        <exclude name="PEAR.Commenting.ClassComment.SpacingBeforeShort"/>
-
-        <exclude name="PEAR.Commenting.ClassComment.SpacingBeforeTags"/>
-
-        <exclude name="PEAR.Commenting.ClassComment.TagIndent"/>
         <severity>8</severity>
     </rule>
 
@@ -166,25 +169,16 @@
         <severity>2</severity>
     </rule>
 
-    <rule ref="PEAR.Commenting.FunctionComment.ParameterNamesNotAligned">
-        <severity>2</severity>
-    </rule>
 
     <rule ref="PEAR.Commenting.FunctionComment.MissingReturn">
         <severity>2</severity>
     </rule>
 
-    <rule ref="PEAR.Commenting.FunctionComment.SpacingAfterParams">
-        <severity>2</severity>
-    </rule>
 
     <rule ref="PEAR.Commenting.FunctionComment.WrongStyle">
         <severity>2</severity>
     </rule>
 
-    <rule ref="PEAR.Commenting.FunctionComment.SpacingBeforeTags">
-        <severity>2</severity>
-    </rule>
 
     <!--Keep-->
     <rule ref="PEAR.Commenting.FunctionComment.MissingParamName">
@@ -196,39 +190,11 @@
         <severity>2</severity>
     </rule>
 
-    <rule ref="PEAR.Commenting.FunctionComment.ParameterCommentsNotAligned">
-        <severity>2</severity>
-    </rule>
-
     <rule ref="PEAR.Commenting.FunctionComment.MissingParamTag">
         <severity>2</severity>
     </rule>
 
     <rule ref="PEAR.Commenting.FunctionComment.ExtraParamComment">
-        <severity>2</severity>
-    </rule>
-
-    <rule ref="PEAR.Commenting.FunctionComment.SpacingBeforeParams">
-        <severity>2</severity>
-    </rule>
-
-    <rule ref="PEAR.Commenting.FunctionComment.SpacingAfterLongName">
-        <severity>2</severity>
-    </rule>
-
-    <rule ref="PEAR.Commenting.FunctionComment.SpacingAfterLongType">
-        <severity>2</severity>
-    </rule>
-
-    <rule ref="PEAR.Commenting.FunctionComment.SpacingBeforeShort">
-        <severity>2</severity>
-    </rule>
-
-    <rule ref="PEAR.Commenting.FunctionComment.SpacingBeforeParamType">
-        <severity>2</severity>
-    </rule>
-
-    <rule ref="PEAR.Functions.FunctionCallSignature.Indent">
         <severity>2</severity>
     </rule>
 </ruleset>
