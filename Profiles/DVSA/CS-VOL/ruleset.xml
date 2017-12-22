@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ruleset name="VOL-v1">
+    <description>Coding standards as agreed by VOL developers in a meeting on 21st December 2017</description>
+
+    <!-- Project follows PSR-2 standards -->
+    <rule ref="PSR2">
+        <!-- Line length should still be obeyed where possible, but shouldn't be outputting warnings given it's a soft
+         limit rather than a hard requirement. Outputting warnings for non-required things trains people to ignore
+         warnings and can be harmful in the long run -->
+        <exclude name="Generic.Files.LineLength"/>
+    </rule>
+
+    <!-- Space after closing parenthesis of function call prohibited -->
+    <rule ref="PEAR.Functions.FunctionCallSignature.SpaceAfterCloseBracket">
+        <severity>8</severity>
+    </rule>
+
+    <!-- Disallow superfluous whitespace at the start of a file -->
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.StartFile">
+        <severity>8</severity>
+    </rule>
+
+    <!-- Disallow superfluous whitespace at the end of a file -->
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EndFile">
+        <severity>8</severity>
+    </rule>
+
+    <!-- Disallow superfluous whitespace at the end of a line -->
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EndLine">
+        <severity>8</severity>
+    </rule>
+
+    <!-- Disallow spaces before semi-colon -->
+    <rule ref="Squiz.WhiteSpace.SemicolonSpacing.Incorrect">
+        <severity>8</severity>
+    </rule>
+
+    <!-- Functions must not contain multiple empty lines in a row; found %s empty lines -->
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines">
+        <severity>8</severity>
+    </rule>
+
+    <!-- Do not prefix function or method names with a double underscore -->
+    <rule ref="Generic.NamingConventions.CamelCapsFunctionName.MethodDoubleUnderscore">
+        <severity>8</severity>
+    </rule>
+
+    <rule ref="Generic.NamingConventions.CamelCapsFunctionName.FunctionDoubleUnderscore">
+        <severity>8</severity>
+    </rule>
+
+    <!-- There should not be any TODO comments in the code - raise a JIRA issue instead -->
+    <rule ref="Generic.Commenting.Todo.TaskFound">
+        <severity>8</severity>
+    </rule>
+
+    <!-- Code should not have IF statements that are always true or always false -->
+    <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement.Found">
+        <severity>8</severity>
+    </rule>
+
+    <!-- Don't write code that can't be reached -->
+    <rule ref="Squiz.PHP.NonExecutableCode.Unreachable">
+        <severity>8</severity>
+    </rule>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Note: The below exclusions are done as the ClassComment sniff runs all
+         sub-sniffs even if only one or two are specified. As such, the extraneous
+         sniffs must be excluded. These exclusions only need to be done on one of
+         the ClassComment sniff references however. It does not need to be repeated.
+    -->
+    <!-- Doc comment is empty for %s -->
+    <!-- class, interface -->
+    <rule ref="PEAR.Commenting.ClassComment.Empty">
+        <!-- @copyright tag must contain a year and the name of the copyright holder -->
+        <exclude name="PEAR.Commenting.ClassComment.EmptyCopyright"/>
+
+        <!-- Content missing for @version tag in file comment -->
+        <exclude name="PEAR.Commenting.ClassComment.EmptyVersion"/>
+
+        <exclude name="PEAR.Commenting.ClassComment.InvalidVersion"/>
+
+        <exclude name="PEAR.Commenting.ClassComment.MissingTag"/>
+
+        <exclude name="PEAR.Commenting.ClassComment.SpacingAfterShort"/>
+
+        <exclude name="PEAR.Commenting.ClassComment.SpacingBeforeShort"/>
+
+        <exclude name="PEAR.Commenting.ClassComment.SpacingBeforeTags"/>
+
+        <exclude name="PEAR.Commenting.ClassComment.TagIndent"/>
+        <severity>8</severity>
+    </rule>
+
+    <!-- You must use "/**" style comments for a %s comment -->
+    <!-- class, interface -->
+    <rule ref="PEAR.Commenting.ClassComment.WrongStyle">
+        <severity>8</severity>
+    </rule>
+
+    <!-- Missing %s doc comment -->
+    <!-- class, interface -->
+    <rule ref="PEAR.Commenting.ClassComment.Missing">
+        <severity>8</severity>
+    </rule>
+
+
+    <rule ref="Squiz.Classes.ClassFileName">
+        <severity>8</severity>
+    </rule>
+
+    <!--
+      OLCS additions
+    -->
+    <rule ref="PEAR.Commenting.ClassComment">
+        <exclude-pattern>test/*</exclude-pattern>
+    </rule>
+
+    <!-- Missing %s doc comment -->
+    <!-- class, interface -->
+    <rule ref="PEAR.Commenting.ClassComment.Missing">
+        <severity>2</severity>
+    </rule>
+
+    <!-- Doc comment is empty for %s -->
+    <!-- class, interface -->
+    <rule ref="PEAR.Commenting.ClassComment.Empty">
+        <severity>2</severity>
+    </rule>
+
+    <!-- You must use "/**" style comments for a %s comment -->
+    <!-- class, interface -->
+    <rule ref="PEAR.Commenting.ClassComment.WrongStyle">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment">
+        <exclude-pattern>test/</exclude-pattern>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.Empty">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.Missing">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.MissingParamComment">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.ParameterNamesNotAligned">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.MissingReturn">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.SpacingAfterParams">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.WrongStyle">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.SpacingBeforeTags">
+        <severity>2</severity>
+    </rule>
+
+    <!--Keep-->
+    <rule ref="PEAR.Commenting.FunctionComment.MissingParamName">
+        <severity>2</severity>
+    </rule>
+
+    <!--Keep-->
+    <rule ref="PEAR.Commenting.FunctionComment.ParamNameNoMatch">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.ParameterCommentsNotAligned">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.MissingParamTag">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.ExtraParamComment">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.SpacingBeforeParams">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.SpacingAfterLongName">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.SpacingAfterLongType">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.SpacingBeforeShort">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Commenting.FunctionComment.SpacingBeforeParamType">
+        <severity>2</severity>
+    </rule>
+
+    <rule ref="PEAR.Functions.FunctionCallSignature.Indent">
+        <severity>2</severity>
+    </rule>
+</ruleset>
