@@ -138,8 +138,18 @@
         <severity>2</severity>
     </rule>
 
+    <!-- You must use "/**" style comments for a %s comment -->
+    <!-- class, interface -->
+    <rule ref="PEAR.Commenting.ClassComment.WrongStyle">
+        <severity>2</severity>
+    </rule>
+
     <rule ref="PEAR.Commenting.FunctionComment">
         <exclude-pattern>test/</exclude-pattern>
+        <exclude name="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+        <exclude name="PEAR.Commenting.FunctionComment.Empty"/>
+        <exclude name="PEAR.Commenting.FunctionComment.Missing"/>
+        <exclude name="PEAR.Commenting.FunctionComment.WrongStyle"/>
     </rule>
 
     <!--Keep-->
@@ -152,7 +162,4 @@
         <severity>2</severity>
     </rule>
 
-    <rule ref="PEAR.Commenting.FunctionComment.MissingParamTag">
-        <severity>2</severity>
-    </rule>
 </ruleset>
