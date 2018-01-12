@@ -91,7 +91,6 @@
     <severity>8</severity>
   </rule>
 
-
   <rule ref="Squiz.Classes.ClassFileName">
     <severity>8</severity>
   </rule>
@@ -118,12 +117,10 @@
     <exclude name="PEAR.Commenting.ClassComment.WrongStyle" />
   </rule>
 
-  <!--Keep-->
   <rule ref="PEAR.Commenting.FunctionComment.MissingParamName">
     <severity>2</severity>
   </rule>
 
-  <!--Keep-->
   <rule ref="PEAR.Commenting.FunctionComment.ParamNameNoMatch">
     <severity>2</severity>
   </rule>
