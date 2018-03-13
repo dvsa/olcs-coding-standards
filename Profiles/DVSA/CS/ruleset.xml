@@ -98,7 +98,7 @@
     OLCS additions
   -->
   <rule ref="PEAR.Commenting.ClassComment">
-    <exclude-pattern>test/*</exclude-pattern>
+    <exclude-pattern>*</exclude-pattern>
   </rule>
 
   <!-- Missing %s doc comment -->
@@ -108,7 +108,7 @@
   </rule>
 
   <rule ref="PEAR.Commenting.FunctionComment">
-    <exclude-pattern>test/</exclude-pattern>
+    <exclude-pattern>*</exclude-pattern>
     <exclude name="PEAR.Commenting.FunctionComment.MissingParamComment"/>
     <exclude name="PEAR.Commenting.FunctionComment.Empty"/>
     <exclude name="PEAR.Commenting.FunctionComment.Missing"/>
