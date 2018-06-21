@@ -29,7 +29,7 @@ class ToggleInterfaceSniff implements Sniff
     {
         $tokens = $phpcsFile->getTokens();
         $interface = $phpcsFile->findImplementedInterfaceNames($stackPtr)[0];
-        $hasToggleInterface = $interface === 'ToggleInterface';
+        $hasToggleInterface = $interface === 'ToggleRequiredInterface' || $interface === 'ToggleAwareInterface';
         $nameSpacePosition = $phpcsFile->findPrevious([T_NAMESPACE], $stackPtr);
         $nameSpaceToken = $tokens[$nameSpacePosition];
         $inPermitNamespace = preg_match('#CommandHandler\Permit | QueryHandler\Permit#',
