@@ -1,5 +1,12 @@
 {
     "name": "olcs/coding-standards",
     "description": "OLCS CodeSniffer and MessDetector rule sets",
-    "require": {}
+    "require": {
+        "elendev/nexus-composer-push": "^0.0.4"
+    },
+    "extra": {
+        "nexus-push": {
+            "url": "http://nexus.shd.ci.nonprod.dvsa.aws/repository/OLCS/olcs/olcs-coding-standards"
+        }
+    }
 }
