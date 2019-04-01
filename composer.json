@@ -4,9 +4,12 @@
     "require": {
         "elendev/nexus-composer-push": "^0.0.4"
     },
+    "scripts": {
+        "release": "release"
+    },
     "extra": {
         "nexus-push": {
-            "url": "http://nexus.shd.ci.nonprod.dvsa.aws/repository/OLCS/olcs/olcs-coding-standards"
+            "url": "http://nexus.shd.ci.nonprod.dvsa.aws/repository/olcs-coding-standards"
         }
     }
 }
