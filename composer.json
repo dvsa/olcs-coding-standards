@@ -1,5 +1,32 @@
 {
     "name": "olcs/coding-standards",
     "description": "OLCS CodeSniffer and MessDetector rule sets",
-    "require": {}
+    "repositories": [
+        {
+            "packagist": false
+        },
+        {
+            "url": "http://nexus.shd.ci.nonprod.dvsa.aws/repository/OLCS",
+            "type": "composer"
+        },
+        {
+            "url": "http://nexus.shd.ci.nonprod.dvsa.aws/repository/Packagist-Proxy",
+            "type": "composer"
+        }
+    ],
+    "require": {
+        "elendev/nexus-composer-push": "^0.0.4"
+    },
+
+    "scripts": {
+        "release": "release"
+    },
+    "config": {
+        "secure-http": false
+    },
+    "extra": {
+        "nexus-push": {
+            "url": "http://nexus.shd.ci.nonprod.dvsa.aws/repository/olcs-coding-standards"
+        }
+    }
 }
