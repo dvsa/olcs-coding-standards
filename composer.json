@@ -15,9 +15,8 @@
         }
     ],
     "require": {
-        "elendev/nexus-composer-push": "^0.0.4"
+        "elendev/nexus-composer-push": "^0.1"
     },
-
     "scripts": {
         "release": "release"
     },

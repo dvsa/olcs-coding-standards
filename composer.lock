@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cdd9cb4c387357e059731961c6c5f639",
+    "content-hash": "28ea627450e4766f13ff02ee656cf989",
     "packages": [
         {
             "name": "elendev/nexus-composer-push",
-            "version": "v0.0.4",
+            "version": "v0.1.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Elendev/nexus-composer-push/zipball/c8ca3207e42078521a203410042e3938dc8da9f9",
-                "reference": "c8ca3207e42078521a203410042e3938dc8da9f9",
+                "url": "http://nexus.shd.ci.nonprod.dvsa.aws/repository/Packagist-Proxy/elendev/nexus-composer-push/v0.1.0/elendev-nexus-composer-push-v0.1.0.zip",
+                "reference": "4e60c26092fc7bccff94ccc9f86d2047890d26f4",
                 "shasum": ""
             },
             "require": {
@@ -24,6 +24,9 @@
                 "symfony/filesystem": "^3.0|^4.0",
                 "symfony/finder": "^3.0|^4.0"
             },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.14"
+            },
             "type": "composer-plugin",
             "extra": {
                 "class": "Elendev\\NexusComposerPush\\Plugin"
@@ -33,15 +36,14 @@
                     "Elendev\\NexusComposerPush\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
-                    "name": "Jonas Renaudot",
+                    "name": "Elendev",
                     "email": "jonas.renaudot@gmail.com"
                 }
             ],
             "description": "Provide a Push command to composer to push to Nexus repositories",
-            "time": "2019-03-11T10:16:41+00:00"
+            "time": "2019-04-11T13:26:33+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
