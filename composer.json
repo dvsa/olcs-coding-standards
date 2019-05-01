@@ -17,6 +17,9 @@
     "require": {
         "elendev/nexus-composer-push": "^0.1"
     },
+    "require-dev": {
+        "olcs/olcs-devtools": "~4.206.0"
+    },
     "scripts": {
         "release": "release"
     },
